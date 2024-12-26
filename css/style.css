@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    font-family: 'montserratregular', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+/*--------------section delivery---------------*/
+
+.delivery{
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 69px;
+}
+
+.delivery__h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.delivery__h2 span{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.delivery__text{
+    font-family: 'montserratlight';
+    font-size: 21px;
+}
+
+/*------------section man-woman------------*/
+.man-woman{
+    background: rgb(249,246,241);
+    background: linear-gradient(90deg, rgba(249,246,241,1) 0%, rgba(249,246,241,1) 50%, rgba(249,224,224,1) 50%, rgba(249,224,224,1) 100%);
+}
+.man-woman .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.man, .woman{
+    width: 50%;
+    padding: 60px 15px 58px;
+}
+.man-woman__h2{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.man-woman__h2 span{
+    font-weight: normal;
+}
+.man-woman__text{
+    font-family: 'montserratlight';
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.man-woman__link{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    background-color: #D7B399;
+    justify-content: center;
+    align-items: center;
+}
+.man-woman__link:hover, .man-woman__link:focus {
+    background-color: #8a7361;
+}
+.man{
+    background-image: url("../img/man.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.woman{
+    background-image: url("../img/woman.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/*----------------section new----------------*/
+.new__h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    border:#D7B399 solid 1px;
+}
+.card__title{
+    font-family: 'montserratbold';
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.crad__price{
+    color:#D7B399;
+}
+.new__btn{
+    display: block;
+    width: 220px;
+    height: 55px;
+    background-color: #D7B399;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 100px auto 0;
+}
+
+.new__btn:hover,
+.new__btn:focus{
+    display: block;
+    width: 220px;
+    height: 55px;
+    background-color: #8a7361;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 100px auto 0;
+}
+.new .container{
+    padding: 150px 15px;
+}
+
+.card__zoom{
+    fill: #D7B399;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.card__zoom:hover,
+.card__zoom:focus{
+    fill:#4e3f32;
+} 
+
+/*-------------header------------------*/
+.header{
+    
+    background-color: #F9F6F1;
+}
+.header-menu{
+    min-height: 90px;
+}
+
+.section__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainmenu__list{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    margin-right: 70px;
+}
+
+.basket__list{
+    display: flex;
+    margin-top: 54px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.mainmenu__item{
+    display: flex;
+    margin-right: 35px;
+    margin-top: 61px;
+    flex-shrink: 0;
+}
+
+.mainmenu__item img{
+    margin-bottom: 6 px;
+}
+
+.menu__link{
+    color:#212121;
+    text-decoration: none;
+    display: flex;
+}
+.header__logo{
+    margin-top: 50px;
+    margin-left: 56px;
+}
+
+.basket__item{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/*------------banner-------------*/
+
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background:url('../img/shoes.png') no-repeat right center;
+}
+
+.slider__text{
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+.slider__big-text{
+    font-family: 'montserratbold', "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.button{
+    display: flex;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.button:hover,
+.button:focus{
+    display: flex;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #ca895b;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.slider__item-price{
+    font-family: 'montserratbold', "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider__price--old{
+    font-size:24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new{
+    font-size: 42px;
+    color:#d84033;
+}
+
+.slider__wrapper{
+    position:relative;
+}
+
+.slider__button{
+    position: absolute;
+    top:50%;
+}
+
+.slider__button--prev{
+    left:-100px
+}
+
+.slider__button--next{
+    right: -100px;
+}
+
+.slider__button {
+    color:#FFFFFF;
+    border: none;
+    background: transparent;
+}
+
+/* --- section dress --- */
+
+.dress__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dress__item {
+    position: relative;
+    width: 277px;
+    height: 236px;
+    text-align: right;
+}
+
+.dress__item--grey {
+    background-color: #F4F4F4;
+}
+
+.dress__item--cream {
+    background-color: #F9F6F1;
+}
+
+.dress__item img {
+    width: 70%;
+    position: relative;
+}
+
+.dress__item{
+    font-family: 'montserratlight';
+    text-transform: uppercase;
+}
+
+.dress__item p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+}
